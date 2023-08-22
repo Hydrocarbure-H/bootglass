@@ -1,0 +1,44 @@
+.btn
+{
+    border-radius: var(--border-radius);
+    padding: 10px 15px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: var(--font-size);
+    background: rgba(255, 252, 252, 0.24);
+    transition: all ease .3s;
+    color: var(--color-white);
+}
+
+.btn:hover
+{
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    transform: scale(1.02);
+}
+
+.btn-info:hover
+{
+    background-color: var(--color-info);
+    transform: scale(1.02);
+}
+
+.btn-success:hover
+{
+    background-color: var(--color-success);
+    transform: scale(1.02);
+}
+
+.btn-danger:hover
+{
+    background-color: var(--color-danger);
+    transform: scale(1.02);
+}
+
+.btn-warning:hover
+{
+    background-color: var(--color-warning);
+    transform: scale(1.02);
+}

@@ -1,14 +1,12 @@
-/* Create a transparent div with a grey tinte */
-
 .card {
     background: rgba(224, 220, 220, 0.55);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     padding: 20px;
     margin: 20px;
     color: white;
     font-family: "confortaa regular", sans-serif;
-    font-size: 16px;
+    font-size: var(--font-size);
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
