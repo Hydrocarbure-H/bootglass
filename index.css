@@ -1,0 +1,52 @@
+@import url("card.css");
+@import url("button.css");
+
+@font-face {
+    font-family: "confortaa light";
+    src: url("./fonts/Comfortaa-Light.ttf");
+}
+@font-face {
+    font-family: "confortaa regular";
+    src: url("./fonts/Comfortaa-Regular.ttf");
+}
+@font-face {
+    font-family: "confortaa bold";
+    src: url("./fonts/Comfortaa-Bold.ttf");
+}
+
+
+body:before {
+    content:"";
+    position:fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    z-index:-1;
+    background: rgb(24,188,156);
+    background: linear-gradient(90deg, rgba(24,188,156,1) 0%, rgba(52,152,219,1) 100%);
+}
+
+body {
+    font-family: "confortaa regular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+
+.center
+{
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+}
+
+.left{
+    position: absolute; left: 0%; top: 50%; transform: translate(0%, -50%);
+}
+
+.right{
+    position: absolute; right: 0%; top: 50%; transform: translate(0%, -50%);
+}
