@@ -1,0 +1,98 @@
+.navbar
+{
+    background: rgba(224, 220, 220, 0.55);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    border-radius: var(--border-radius);
+    padding: 10px;
+    margin: 20px;
+    color: white;
+    font-family: "confortaa regular", sans-serif;
+    font-size: var(--font-size);
+}
+
+.navbar a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-brand
+{
+    font-size: 25px;
+}
+
+.navbar-brand:hover
+{
+    color: var(--color-white);
+}
+
+.navbar-toggler
+{
+    color: var(--color-white);
+    border: none;
+}
+
+.nav-item
+{
+    border-radius: var(--border-radius);
+    padding: 2px 5px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: var(--font-size);
+    background: rgba(255, 252, 252, 0.24);
+    transition: all ease .3s;
+    color: var(--color-white);
+}
+
+.nav-item:hover
+{
+    background-color: var(--color-blue1);
+}
+
+.nav-link:hover
+{
+    color: var(--color-white);
+}
+
+.dropdown-menu
+{
+    background: rgba(224, 220, 220, 0.55);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    border-radius: var(--border-radius);
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    font-family: "confortaa regular", sans-serif;
+    font-size: var(--font-size);
+    border:none;
+}
+
+.dropdown-menu.show
+{
+    margin-top: 25px;
+}
+
+.dropdown-item
+{
+    color: var(--color-white);
+    font-size: var(--font-size);
+    transition: all ease .3s;
+}
+
+.dropdown-item:hover
+{
+    background: rgba(255, 252, 252, 0.24);
+    border-radius: var(--border-radius);
+}
+
+.dropdown-divider
+{
+    border-top: 1px solid var(--color-white);
+}
+
+.navbar button
+{
+    border:none;
+}
