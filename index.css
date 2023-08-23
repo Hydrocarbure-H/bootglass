@@ -54,6 +54,12 @@ body {
     display: block;
 }
 
+.my_subcontainer
+{
+    width: fit-content;
+    margin: 0 auto;
+}
+
 .center
 {
     position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
