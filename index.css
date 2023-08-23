@@ -4,6 +4,7 @@
 @import url("button.css");
 @import url("nav.css");
 @import url("bigcard.css");
+@import url("footer.css");
 
 @font-face {
     font-family: "confortaa light";
@@ -39,8 +40,19 @@ body {
     color: #212529;
     text-align: left;
     background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
+.my_container
+{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin:0;
+    display: block;
+}
 
 .center
 {
