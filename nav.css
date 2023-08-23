@@ -8,6 +8,8 @@
     color: white;
     font-family: "confortaa regular", sans-serif;
     font-size: var(--font-size);
+    position: absolute;
+    top: 0;
 }
 
 .navbar a
