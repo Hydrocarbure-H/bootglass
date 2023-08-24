@@ -12,6 +12,7 @@
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
+    min-width: 300px;
 }
 
 .form-control

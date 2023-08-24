@@ -1,0 +1,35 @@
+.nav-tabs .form-control
+{
+    background-color:black;
+}
+
+/*.nav-tabs .form-control:focus*/
+/*{*/
+/*    background: rgba(224, 220, 220, 0.55);*/
+/*    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;*/
+/*    border-radius: var(--border-radius);*/
+/*    border: 1px solid rgba(224, 220, 220, 0.55);*/
+/*    color: var(--color-white);*/
+/*}*/
+
+.form-control::placeholder
+{
+    color: var(--color-white);
+}
+
+/*label */
+label
+{
+    color: var(--color-white);
+}
+
+label:active
+{
+    background: rgba(224, 220, 220, 0.55);
+
+}
+
+label::placeholder
+{
+    color: var(--color-white);
+}

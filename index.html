@@ -166,7 +166,8 @@
                 <div class="form-group">
                     <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
                            placeholder="Email">
-                    <small id="emailHelp" class="form-text text-white">Utilisez votre adresse mail @tchoutchou.net.</small>
+                    <small id="emailHelp" class="form-text text-white">Utilisez votre adresse mail
+                        @tchoutchou.net.</small>
                 </div>
                 <div class="form-group">
                     <input type="password" class="form-control" id="password" placeholder="Mot de passe">
@@ -183,20 +184,114 @@
             </div>
         </div>
     </div>
-</div>
 
-<footer class="page-footer font-small teal pt-4">
-    <div class="container-fluid text-center text-md-left">
-        <div class="d-flex justify-content-center align-items-center flex-column"><h5
-                class="text-uppercase font-weight-bold">Super footer</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut neque eget lacus interdum ullamcorper.
-                Nullam euismod urna eget justo eleifend, ut commodo ipsum pulvinar. Suspendisse potenti. Sed elementum,
-                arcu nec consequat cursus, tortor velit pellentesque quam, sit amet ultrices nisi enim ac.</p></div>
+    <div class="my_subcontainer">
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link text-black active" data-bs-toggle="tab" href="#profile" aria-selected="true"
+                   role="tab">Profil</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link text-black" data-bs-toggle="tab" href="#sites" aria-selected="false"
+                   tabindex="-1"
+                   role="tab">Sites</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link text-black" data-bs-toggle="tab" href="#add-site" aria-selected="false"
+                   tabindex="-1"
+                   role="tab">Ajouter un site</a>
+            </li>
+            <li class="nav-item" role="presentation" id="logout_btn">
+                <a class="nav-link text-black" data-bs-toggle="tab" aria-selected="false"
+                   tabindex="-1"
+                   role="tab">
+                    Déconnexion
+                </a>
+            </li>
+        </ul>
+        <div id="content" class="tab-content">
+            <div class="tab-pane fade show active tab-container" id="profile" role="tabpanel">
+                <div class="my_subcontainer">
+                    <h3>Mon compte</h3>
+                    <div class="form d-inline-block">
+                        <fieldset>
+                            <legend>Mon compte</legend>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                       placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                       placeholder="Nom">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                       placeholder="Prénom">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="password" placeholder="Mot de passe">
+                                <div class="invalid-feedback" id="invalid-feedback"></div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="tab-pane fade tab-container" id="sites" role="tabpanel">
+                    <div class="sites-container" id="sites-container">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="google-referencing">
+                            <label class="form-check-label" for="google-referencing">Référencer mes sites sur Google
+                                [bêta]</label>
+                        </div>
 
-        <span class="footer-copyright text-center py-3">© 2023 Copyright:<a
-                href="https://efrei.ws">Bootsglass</a></span></div>
-</footer>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+                    </div>
+                </div>
+                <div class="tab-pane fade tab-container" id="add-site" role="tabpanel">
+                    <div class="addsite-container">
+                        <h3>Ajouter un site</h3>
+                        <p>Il vous reste <b><span id="sites-remaining">1</span></b> site à ajouter.</p>
+                        <div class="addsite">
+                            <div class="form-floating site-url">
+                                <input type="text" class="form-control" placeholder="Url du site" id="site-url">
+                                <label for="site-url">Url du site (sans le https://)</label>
+                            </div>
+                            <div class="site-usedtech">
+                                <div class="form-floating">
+                                    <select class="form-select" id="site-framework">
+                                        <option value="2">Aucun (PHP/HTML/JS/CSS)</option>
+                                        <option value="1">Angular</option>
+                                        <option value="3">React</option>
+                                        <option value="4">Vue.js</option>
+                                        <option value="5">Next.js</option>
+                                        <option value="6">Nuxt.js</option>
+                                    </select>
+                                    <label for="site-framework">Framework utilisé</label>
+                                </div>
+                            </div>
+                            <div class="site-submit">
+                                <div class="btn btn-info" id="check-url">Vérifier la disponibilité</div>
+                                <div class="btn btn-success" id="add-site-btn">Ajouter</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer font-small teal pt-4">
+        <div class="container-fluid text-center text-md-left">
+            <div class="d-flex justify-content-center align-items-center flex-column"><h5
+                    class="text-uppercase font-weight-bold">Super footer</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut neque eget lacus interdum
+                    ullamcorper.
+                    Nullam euismod urna eget justo eleifend, ut commodo ipsum pulvinar. Suspendisse potenti. Sed
+                    elementum,
+                    arcu nec consequat cursus, tortor velit pellentesque quam, sit amet ultrices nisi enim ac.</p></div>
+
+            <span class="footer-copyright text-center py-3">© 2023 Copyright:<a
+                    href="https://efrei.ws">Bootsglass</a></span></div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
