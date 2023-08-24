@@ -73,3 +73,13 @@ body {
 .right{
     position: absolute; right: 0%; top: 50%; transform: translate(0%, -50%);
 }
+
+a{
+    text-decoration: underline;
+    color: var(--color-white);
+    transition: 0.3s;
+}
+
+a:hover{
+    text-decoration: none;
+}
