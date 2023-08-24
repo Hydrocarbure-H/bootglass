@@ -1,35 +1,42 @@
-.nav-tabs .form-control
+.nav-tabs .nav-link
 {
-    background-color:black;
+    color: var(--color-white);
+    border: none;
+    border-radius: var(--border-radius);
 }
 
-/*.nav-tabs .form-control:focus*/
-/*{*/
-/*    background: rgba(224, 220, 220, 0.55);*/
-/*    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;*/
-/*    border-radius: var(--border-radius);*/
-/*    border: 1px solid rgba(224, 220, 220, 0.55);*/
-/*    color: var(--color-white);*/
-/*}*/
-
-.form-control::placeholder
+.nav-tabs .nav-link:hover
 {
+    background-color: var(--color-blue2);
+    curosr: pointer;
     color: var(--color-white);
 }
 
-/*label */
-label
+.nav-tabs .nav-link:hover
 {
+    background-color: var(--color-blue2);
+    curosr: pointer;
+    border-radius: var(--border-radius);
     color: var(--color-white);
 }
 
-label:active
+.nav-tabs .nav-link.active
 {
-    background: rgba(224, 220, 220, 0.55);
-
+    background: rgba(255, 252, 252, 0.24);
+    color: var(--color-white);
+    border: none;
+    border-radius: var(--border-radius);
 }
 
-label::placeholder
+.nav-tabs .nav-link.active:hover
 {
-    color: var(--color-white);
+    background-color: var(--color-white);
+    color: var(--color-black);
+    curosr: pointer;
+}
+
+
+.nav-tabs .nav-item
+{
+    padding:0;
 }
